@@ -1,0 +1,647 @@
+@charset "utf-8";
+/*头部*/
+#header{
+    height: 30px;
+    background: #000;
+    line-height: 30px;
+    overflow: hidden;
+    a{
+        font-size:11px;
+        color: #fff;
+    }
+    a:hover{
+        color: red;
+    }
+    span{
+        color: #fff;
+        font-size: 12px;
+    }
+    div{
+        overflow: hidden;
+    }
+    p.left{
+        padding-left: 12px;
+       span.header_last1{
+           display:inline-block;
+           width: 84px;
+           height: 19px;
+           margin-left: 70px;
+            a{
+                float: left;
+            }
+        }
+        span.lo_re{
+            margin: 0 32px;
+        }
+    }
+    p.right{
+        a{
+            margin-left:20px ;
+           }
+         a.header_img{
+             padding-left: 18px;
+         }
+         a.header_img_1{
+             background: url(../img/cion.png) 0px 3px;
+         }
+         a.header_img_2{
+             background: url(../img/cion.png) 0px -31px;
+         }
+         a.header_img_3{
+             background: url(../img/cion.png) 0px -67px;
+         }
+    };
+    }
+    /*搜索区域*/
+#top{
+    height: 84px;
+    text-align: center;
+    #logo{
+        
+        margin-top:24px ;
+    }
+    #shopBag{
+        text-align: center;
+        line-height: 34px;
+        display: inline-block;
+        width:188px ;
+        height: 34px;
+        border: 1px solid #ccc;
+        float: right;
+        margin-top: 24px;
+        background: url(../img/cion.png) 29px -108px;
+        span{
+         color: red;
+         padding: 0 5px;
+        }
+    }
+    #searbox{
+        display: inline-block;
+        margin-top: 24px;
+        width: 635px;
+        #search{
+            width: 542px;
+            height: 36px;
+            border: 1px solid #c8c8c8;
+            float: left;
+            box-sizing: border-box;
+            padding-left: 20px;
+        }
+        #searBtn{
+            display: inline-block;
+            width: 90px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            background: #000;
+            color: #fff;
+            float: left;
+        }
+    }
+    #hotSearch{
+        a{
+            float: left;
+            font-size:12px ;
+            color: #ccc;
+            margin-right: 8px;
+            line-height: 24px;
+        }
+        a:hover{
+            color: red;
+        }
+    }
+}
+/*轮播区域和导航*/
+#banner{
+    position: relative;
+     #navinfo{
+         z-index: 11;
+            display: none;
+            position: absolute;
+            width:950px;
+            height: 550px;
+            top: 0;
+            background: #fff;
+            left: 240px;
+            box-shadow: 0 0 10px rgba(0,0,0,.1);
+            .leftNav{
+                box-sizing: border-box;
+                padding: 20px;
+                width: 640px;
+                p{
+                    border-bottom: 1px solid #ccc;
+                    font-size: 18px;
+                    line-height: 50px;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                    padding-bottom:12px;
+                }
+                .navMid{
+                    margin: 0 30px;
+                }
+                div{
+                    float: left;
+                    height: 550px;
+                    width:150px;
+                    dl{
+                        width: 150px;
+                        float: left;
+                        margin-bottom: 30px;
+                        dt{
+                            font-size: 14px;
+                        }
+                        dd{
+                            line-height: 20px;
+                            color: #999;
+                            font-size: 12px;
+                            float: left;
+                            margin-right: 12px;
+                        }
+                    }
+                }
+            }
+            #navImg{
+                margin-top: 35px;
+            }
+        }
+    #navBox{
+        position: absolute;
+        top:36px;
+        background: #fff;
+        width:240px;
+        z-index: 10;
+        box-shadow: 0 0 10px rgba(0,0,0,.1);
+      
+       
+        .navCon{
+            overflow: hidden;
+            padding: 12px 0 4px 15px;
+            border-bottom: 1px solid #f5f5f5;
+            dt{
+                font-size: 14px;
+                font-weight: bold;
+            }
+            dd{
+                float: left;
+                font-size: 11px;
+                color: #ccc;
+                line-height:34px ;
+                margin-right:10px ;
+            }
+            dd:hover{
+                color: red;
+                cursor: pointer;
+            }
+        }
+        .navCon:hover{
+            box-shadow: 0 0 5px rgba(0,0,0,.2);;
+        }
+    }
+    #bannerBox{
+        #proList{
+            float: left;
+            height: 36px;
+            overflow: hidden;
+            .title{
+                float: left;
+                width: 240px;
+                height: 36px;
+                background: url(../img/cion.png) 0px -244px;
+                color: #fff;
+                line-height: 36px;
+                box-sizing: border-box;
+                padding-left: 14px;
+                margin-right:40px;
+            }
+            a{
+                display: inline-block;
+                box-sizing: border-box;
+               margin-right: 40px;
+               padding-top: 12px;
+            }
+        }
+        .rightSign{
+            background: url(../img/cion.png) 0px -184px;
+            float:right;
+            height: 40px;
+            width: 158px;
+            display: inline-block;
+        }
+        #ban{
+            width:1190px ;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+            span{
+                display: none;
+                z-index:5 ;
+                position: absolute;
+                height: 100px;
+                width: 40px;
+                background: rgba(0,0,0,0.1);
+                top: 150px;
+                color:rgba(255,255,255,0.5);
+                line-height: 100px;
+                font-size: 30px;
+                text-align: center;
+                cursor:default;
+            }
+            .ban_left{
+                left: 240px;
+            }
+            .ban_right{
+                right: 0px;
+            }
+            ul{
+                position: absolute;
+                bottom: 20px;
+                right:300px;
+                z-index: 6;
+                li{
+                    margin-left: 10px;
+                    float: left;
+                    width: 100px;
+                    height: 2px;
+                    background:#ccc;
+                }
+            }
+            #bann{
+                overflow: hidden;
+                width: 4760px;
+                position: absolute;
+                img{
+                    float: left;
+                }
+            }
+        }
+        #ban:hover span{
+                display: inline-block;
+        }
+        
+    }
+}
+.leftt{
+    left:0;
+}
+/*内容区域*/
+#con{
+    padding-bottom: 81px;
+    background: #f5f5f5;
+    #banner_down{
+        overflow: hidden;
+        margin-bottom: 70px;
+            margin-top: 10px;
+            img{
+                float: right;
+                margin-left: 10px;
+                }
+    }
+    .conTitle{
+        .conBigTitle{
+            font-size:24px ;
+            font-weight: bold;
+            line-height: 36px;            
+        }
+        .conSmallTitle{
+            font-size:18px ;
+        }
+        .conNav{
+            margin-top:10px ;
+            float: right;
+            li{
+                font-size:14px ;
+                margin-left: 24px;
+                float: left;
+               }
+            li:nth-of-type(1){
+                font-weight: bold;
+            }
+            
+            }
+        .conNav1{
+            margin-top:10px ;            
+            li{
+                float: left;
+               
+            }
+            a{
+                font-size:14px ;
+                color: #474747;
+            }
+            a:hover{
+                font-weight:bold ;
+                color: #000;
+            }
+            span{
+                color: #dadada;
+                font-weight:400px ;
+                margin: 0 11px;
+            }
+        }
+    }
+    .conFir{
+        height: 320px;
+        background: #fff;
+        margin-bottom: 78px;
+        #conBan{
+            float: left;
+            width: 590px;
+            height: 320px;
+            overflow: hidden;
+        }
+        #allLogo{
+            width: 600px;
+            overflow: hidden;
+            float:right;
+            li:nth-of-type(4n){
+                border-right:none ;
+            }
+            li:nth-last-of-type(1)
+            ,li:nth-last-of-type(2)
+            ,li:nth-last-of-type(3)
+            ,li:nth-last-of-type(4){
+                border-bottom: none;
+            }
+            li{
+                background: url(../img/coin_logo.png);
+                overflow: hidden;
+                position: relative;
+                float: left;
+                width: 150px;
+                height: 80px;
+                box-sizing: border-box;
+                border-bottom:1px solid #ccc ;
+                border-right:1px solid #ccc ;
+                span{
+                    position: absolute;
+                    top:-80px;
+                }
+                span.active{
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 150px;
+                    height: 80px;
+                    background:rgba(0,0,0,0.8); 
+                    box-sizing: border-box;
+                    padding: 10px;
+                    text-align: center;
+                    p{
+                        font-size: 10px;
+                        color: #fff;
+                        text-align: center;
+                        line-height: 35px;
+                    }
+                    a{
+                        display: inline-block;
+                        height:20px ;
+                        width: 70px;
+                        text-align: center;
+                        line-height: 20px;
+                        background: red;
+                        color: #fff;
+                        border-radius:5px ;
+                        font-size: 10px;
+                    }
+                      
+                }
+            }
+        }
+    }
+    .recommend{
+        position: relative;
+        margin-bottom: 78px;
+        .recom_pro1{
+             top: 46px;
+            left: 380px;
+        }
+         .recom_pro2{
+             top: 186px;
+            left: 380px;
+        }
+        .recom_pro{
+            width: 201px;
+            height: 140px;
+            position: absolute;
+           
+            box-sizing: border-box;
+            padding: 10px;
+            p{
+                float: left;
+                font-size:12px;
+                
+            }
+            p:nth-of-type(1){
+                font-size:14px;
+                font-weight:bold;
+            }
+            p:nth-of-type(3){
+                line-height: 28px;
+            }
+            img{
+                width: 90px;
+                float: right;                
+            }
+            img:hover{
+                    transform:translateX(-7px) ;
+                    transition: 0.5s;
+                }
+        }
+    }
+    .pro{
+        margin-bottom: 78px;  
+        overflow: hidden;     
+        .right_list{
+            float: left;
+            width: 800px;
+            li{
+                background: #fff;
+                width: 199px;
+                height: 249px;
+                float: left;
+                margin-left: 1px;
+                margin-bottom: 1px;
+                 padding: 14px 0px 0 10px;
+                box-sizing: border-box;
+                p{
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+                .ename{
+                    font-weight: bold;
+                    
+                }
+                img{
+                    float: right;
+                }
+                img:hover{
+                    transform:translateX(-15px) ;
+                    transition: 0.5s;
+                }
+            }
+        }
+        .con_logo{
+            li{
+                position: relative;
+                margin-top: 10px;
+                float: left;
+                width: 148px;
+                height: 60px;
+                background: #fff;
+                text-align: center;
+            }
+            a{
+                float: left;
+                width: 145px;
+                height: 60px;
+                display: inline-block;
+                background: url(../img/coin_logo.png);
+            }
+            li:hover em{
+                display: inline-block;
+            }
+            span{
+                float: left;
+                width: 2px;
+                height: 16px;
+                margin-top: 22px;
+                background: #b1b1b1;
+            }
+            em{
+                display:none;
+                width: 145px;
+                height: 60px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: rgba(255,255,255,0.5);
+            }
+            
+        }
+    }
+    #guess{
+        ul{
+            overflow: hidden;
+            li{
+                margin-left: 1px;
+                margin-bottom:1px;
+                width: 237px;
+                height: 258px;
+                background: #fff;
+                float: left;
+                box-sizing: border-box;
+                p:nth-of-type(1){
+                  font-size: 12px;
+                }
+                p:nth-of-type(3){
+                 margin-top: 6px;
+                }
+                img{
+                    margin: 0 28.5px;
+                    width: 180px;
+                    height: 180px;
+                }
+                p{
+                  font-weight: bold;
+                    line-height: 20px;
+                    font-size: 14px;
+                    width: 196px;
+                    margin: 0 20px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow:ellipsis;
+                }
+            }
+        }
+    }
+    
+}
+/*底部*/
+#footer{
+    overflow: hidden;
+    height: 370px;
+    .express{
+        height: 156px;
+        border-bottom:2px solid #000 ;
+        ul{
+            padding-top: 30px;
+            li{
+                    text-align: center;
+                
+                float: left;
+                width: 237px;
+                a{
+                    display:inline-block;
+                    margin: 0 93.5px;
+                    height: 49px;
+                    width: 49px;
+                    background: url(../img/footer_ico_sprite.png);
+                }
+                span{
+                    height: 24px;
+                    display: inline-block;
+                    width: 1px;
+                    background: #9d9d9d;
+                }
+                i{
+                    display: inline-block;
+                    font-size: 12px;
+                    color: #000;
+                    font-weight:bold ;
+                    margin-top: 14px;
+                }
+            }
+        }
+    }
+    dl{
+        width: 190px;
+        height: 150px;
+        margin: 30px 0 50px 0;
+        float: left;
+        font-size: 12px;
+        line-height: 26px;
+        dt{
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        dd{}
+    }
+    .cube{
+        float: right;
+        margin-top: 40px;
+        li{
+            background: #000;
+            width: 64px;
+            height: 22px;
+            margin-bottom: 22px;
+        }
+    }
+}
+/*网站信息*/
+#info{
+    height: 102px;
+    background: #000;
+    color:#6f6f6f;
+    font-size: 14px;
+    
+    ul{
+        padding-top: 32px;
+        box-sizing: border-box;
+        margin-left: 168px;
+        overflow: hidden;
+        text-align: center;
+        li{
+            float: left;
+            margin: 0 22px;
+        }
+        li:nth-of-type(1){
+            padding-left: 20px;
+            background: url(../img/cion.png) 0px -322px;
+        }
+    }
+    p{
+        font-size: 12px;
+        text-align: center;
+        line-height: 16px;
+    }
+}
